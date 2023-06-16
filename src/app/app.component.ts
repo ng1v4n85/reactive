@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.signupForm = new FormGroup({
       'username': new FormControl(null, Validators.required),
-      'emial': new FormControl(null, [Validators.required, Validators.email]),
+      'email': new FormControl(null, [Validators.required, Validators.email]),
       'gender': new FormControl('male')
     });
   }
